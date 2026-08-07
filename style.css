@@ -152,6 +152,24 @@ article.review p {
   margin: 1.2rem 0;
 }
 
+article.review p a {
+  color: var(--color-accent);
+}
+
+.next-link {
+  margin-top: 3rem;
+  padding: 1.2rem;
+  background: var(--color-bg-card, #faf8f5);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.next-link a {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
 .ai-note {
   margin-top: 3rem;
   padding-top: 1.5rem;
