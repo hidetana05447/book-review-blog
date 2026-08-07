@@ -1,0 +1,11 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#faf8f5"/>
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#2b2b2b" stroke-width="1.5"/>
+  <text x="1096" y="112" text-anchor="end" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="22" letter-spacing="1" fill="#6b6b6b">日常の視点を広げる書評ブログ</text>
+  <rect x="104" y="142" width="92" height="40" fill="#a8763e"/>
+  <text x="150" y="169" text-anchor="middle" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="22" font-weight="700" fill="#faf8f5">前編</text>
+  <text x="104" y="285" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="66" font-weight="700" fill="#2b2b2b">嫌われる勇気</text>
+  <text x="104" y="352" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="38" font-weight="700" fill="#2b2b2b">人生の「ハンドル」を、</text>
+  <text x="104" y="402" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="38" font-weight="700" fill="#2b2b2b">誰が握っているか</text>
+  <text x="104" y="478" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="28" fill="#a8763e">自己啓発</text>
+</svg>
