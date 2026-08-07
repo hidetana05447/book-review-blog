@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #faf8f5;
+  --color-bg: #ffffff;
   --color-text: #2b2b2b;
   --color-muted: #6b6b6b;
   --color-accent: #a8763e;
@@ -45,7 +45,7 @@ a {
 }
 
 main {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 1.5rem 4rem;
 }
@@ -54,12 +54,25 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .review-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .review-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .review-card {
   display: block;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--color-border);
   text-decoration: none;
 }
 
@@ -71,24 +84,25 @@ main {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .review-genre {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--color-accent);
   letter-spacing: 0.05em;
 }
 
 .review-title {
-  font-size: 1.15rem;
+  font-size: 1rem;
+  line-height: 1.5;
   margin: 0.4rem 0;
 }
 
 .review-insight {
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   color: var(--color-muted);
   margin: 0;
 }
