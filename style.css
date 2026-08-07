@@ -1,0 +1,142 @@
+:root {
+  --color-bg: #faf8f5;
+  --color-text: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --color-accent: #a8763e;
+  --color-border: #e5e0d8;
+  --font-base: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-ui: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  line-height: 1.9;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.tagline {
+  font-family: var(--font-ui);
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+}
+
+.review-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review-card {
+  display: block;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+}
+
+.review-card:hover .review-title {
+  color: var(--color-accent);
+}
+
+.review-genre {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
+
+.review-title {
+  font-size: 1.15rem;
+  margin: 0.4rem 0;
+}
+
+.review-insight {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.back-link {
+  max-width: 680px;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+}
+
+article.review {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+article.review h1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.review-meta {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 2.5rem;
+}
+
+article.review h2 {
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 0.6rem;
+}
+
+article.review p {
+  margin: 1.2rem 0;
+}
+
+.ai-note {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.site-footer {
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  padding: 2rem 0 3rem;
+}
