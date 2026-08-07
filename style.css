@@ -4,7 +4,7 @@
   --color-muted: #6b6b6b;
   --color-accent: #a8763e;
   --color-border: #e5e0d8;
-  --font-base: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-base: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   --font-ui: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 }
 
@@ -67,6 +67,13 @@ main {
   color: var(--color-accent);
 }
 
+.review-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 .review-genre {
   font-family: var(--font-ui);
   font-size: 0.75rem;
@@ -98,6 +105,13 @@ article.review {
   max-width: 680px;
   margin: 0 auto;
   padding: 2rem 1.5rem 5rem;
+}
+
+.review-header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
 article.review h1 {
