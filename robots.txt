@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hidetana05447.github.io/book-review-blog/sitemap.xml
