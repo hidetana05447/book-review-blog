@@ -1,0 +1,9 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#faf8f5"/>
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#2b2b2b" stroke-width="1.5"/>
+  <text x="1096" y="112" text-anchor="end" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="22" letter-spacing="1" fill="#6b6b6b">日常の視点を広げる書評ブログ</text>
+  <text x="104" y="278" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="48" font-weight="700" fill="#2b2b2b">朝井リョウ作品まとめ</text>
+  <text x="104" y="350" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="40" font-weight="700" fill="#2b2b2b">「わかっている側」に</text>
+  <text x="104" y="402" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="40" font-weight="700" fill="#2b2b2b">いることの功罪</text>
+  <text x="104" y="474" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="28" fill="#a8763e">小説</text>
+</svg>
