@@ -107,6 +107,13 @@ main {
   margin: 0;
 }
 
+.review-date {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  margin: 0.5rem 0 0;
+}
+
 .back-link {
   max-width: 680px;
   margin: 2rem auto 0;
