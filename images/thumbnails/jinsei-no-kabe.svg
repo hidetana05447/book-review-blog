@@ -1,0 +1,9 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#faf8f5"/>
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#2b2b2b" stroke-width="1.5"/>
+  <text x="1096" y="112" text-anchor="end" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="22" letter-spacing="1" fill="#6b6b6b">日常の視点を広げる書評ブログ</text>
+  <text x="104" y="275" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="52" font-weight="700" fill="#2b2b2b">人生の壁／スピノザの診療室</text>
+  <text x="104" y="345" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="36" font-weight="700" fill="#2b2b2b">外から与えられる価値と、</text>
+  <text x="104" y="396" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="36" font-weight="700" fill="#2b2b2b">自分の内側から感じる価値</text>
+  <text x="104" y="470" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="28" fill="#a8763e">歴史・哲学</text>
+</svg>
