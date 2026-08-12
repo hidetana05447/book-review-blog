@@ -1,0 +1,22 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#faf8f5"/>
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#2b2b2b" stroke-width="1.5"/>
+  <text x="1096" y="112" text-anchor="end" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="22" letter-spacing="1" fill="#6b6b6b">日常の視点を広げる書評ブログ</text>
+  <!--
+    書名（タイトル）行。1行のみ。
+    文字数の目安（既存実績）:
+      2〜6文字   → font-size 66〜72, y=278〜285
+      7〜9文字   → font-size 54〜58, y=278
+      10文字以上 → font-size 48〜52, y=278
+    長すぎて枠(x=104〜1096, 幅約992px)に収まらない場合はfont-sizeをさらに下げる
+  -->
+  <text x="104" y="278" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="54" font-weight="700" fill="#2b2b2b">{{TITLE}}</text>
+  <!--
+    フック（一言）行。1〜2行。既存記事のh1見出しをそのまま使わず、要約・言い換えたキャッチーな短文にする。
+    1行なら y=350 のみ使い、2行目は削除してよい
+  -->
+  <text x="104" y="350" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="40" font-weight="700" fill="#2b2b2b">{{HOOK_LINE1}}</text>
+  <text x="104" y="402" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="40" font-weight="700" fill="#2b2b2b">{{HOOK_LINE2}}</text>
+  <!-- ジャンルタグ。既存記事の付け方に合わせる（例: 小説、歴史・哲学、自己啓発など。作品形式ではなくテーマ寄りの言葉を優先） -->
+  <text x="104" y="474" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="28" fill="#a8763e">{{GENRE}}</text>
+</svg>
