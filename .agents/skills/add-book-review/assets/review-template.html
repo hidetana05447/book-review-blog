@@ -1,0 +1,88 @@
+<!--
+  単体書籍レビュー用テンプレート。{{...}} を実際の値に置き換えて使う。
+  複数冊テーマ記事の場合はこのテンプレートを使わず、SKILL.mdの「複数冊テーマ記事の場合」セクションを参照する。
+
+  【最重要の注意】
+  content="..." 属性値の中にストレートクォート(")が入る場合は、そのままだと属性が壊れる。
+  必ず &quot; にエスケープすること（本文中のh1タグなどは通常のダブルクォートのままでOK、
+  エスケープが要るのは <meta ... content="..."> のようにHTML属性値の内側に入る場合だけ）。
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TMXRHLCBLW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TMXRHLCBLW');
+</script>
+<title>{{TITLE}}｜日常の視点を広げる書評ブログ</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="日常の視点を広げる書評ブログ">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{HOOK}}">
+<meta property="og:image" content="https://hidetana05447.github.io/book-review-blog/images/thumbnails/{{SLUG}}-og.png">
+<meta property="og:url" content="https://hidetana05447.github.io/book-review-blog/reviews/{{SLUG}}.html">
+<meta property="article:published_time" content="{{DATE_ISO}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{HOOK}}">
+<meta name="twitter:image" content="https://hidetana05447.github.io/book-review-blog/images/thumbnails/{{SLUG}}-og.png">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Book",
+    "name": "{{BOOK_NAME}}",
+    "author": {
+      "@type": "Person",
+      "name": "{{AUTHOR}}"
+    }
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "日常の視点を広げる書評ブログ"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "日常の視点を広げる書評ブログ"
+  },
+  "datePublished": "{{DATE_ISO}}",
+  "reviewBody": "{{DESCRIPTION}}",
+  "url": "https://hidetana05447.github.io/book-review-blog/reviews/{{SLUG}}.html"
+}
+</script>
+</head>
+<body>
+<p class="back-link"><a href="../index.html">← 日常の視点を広げる書評ブログ</a></p>
+
+<article class="review">
+  <img class="review-header-image" src="../images/thumbnails/{{SLUG}}.svg" alt="{{BOOK_NAME}}のサムネイル画像">
+  <h1>{{TITLE}}</h1>
+  <p class="review-meta">対象書籍：{{BOOK_NAME}}（{{AUTHOR}}）／ジャンル：{{GENRE}}／公開日：{{DATE_JA}}</p>
+
+  <!--
+    ここから本文。website/CLAUDE.mdの記事フォーマットのルールに従う：
+    - 小見出し(h2)は最小4個〜最大8個。超えそうなら前編・後編に分割
+    - 前半で「この本について」に軽く触れる。著者名を地の文にも自然に入れる
+    - 気づき→日常への当てはめ、という流れを地の文に自然に組み込む
+    - 個人情報（勤務先名・機微な内容・詳細すぎる経歴）は抽象化・伏せ字化する
+    - Notionの感想内に出てくる「ガネーシャ」はキャラとして登場させない。整理された概念だけ、本人の言葉として使う
+  -->
+  <h2>この本について</h2>
+  <p>{{...}}</p>
+
+  <h2>{{見出し2}}</h2>
+  <p>{{...}}</p>
+
+  <p class="ai-note">※本記事はNotionに書き溜めた読書メモをもとに、AIの編集サポートを受けて構成しています。</p>
+</article>
+</body>
+</html>
