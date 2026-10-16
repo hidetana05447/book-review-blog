@@ -1,0 +1,30 @@
+/* motion-prompt（showheyohtaki/motion-prompt、MIT）の演出を参考に実装：#005 マスクリビール／#074 スクロールでフェードイン／#081 ホバーで浮き上がる／#082 ホバーで画像ズーム。TOPページ専用 */
+
+/* ---- #005 サイト名：線が中央から伸び、上の文字は下から、下の文字は上から、切り抜きの中でせり上がる ---- */
+.mr-clip { overflow: hidden; }
+.mr-top .mr-h1 { margin: 0; padding: 0.2rem 0 0.35rem; transform: translateY(130%); animation: mr-up 1s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards; }
+.mr-bottom .mr-tagline { padding: 0.5rem 0 0.2rem; transform: translateY(-130%); animation: mr-down 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards; }
+.mr-line { width: 160px; height: 4px; margin: 0.4rem auto; background: var(--color-accent); transform: scaleX(0); animation: mr-line 0.8s cubic-bezier(0.65, 0, 0.35, 1) 0.1s forwards; }
+@keyframes mr-up { to { transform: translateY(0); } }
+@keyframes mr-down { to { transform: translateY(0); } }
+@keyframes mr-line { to { transform: scaleX(1); } }
+
+/* ---- #074 カード：判定線（画面の高さの85%）を越えたら、下から28px・透明から0.7秒で出る。列の中は少しずつずらす ---- */
+.review-list > li { opacity: 0; transform: translateY(28px); transition: opacity 0.7s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.review-list > li.mr-in { opacity: 1; transform: none; }
+.review-list > li.mr-reset { transition: none; }
+
+/* ---- #081 ホバーで浮き上がる：0.3秒で上へ10px。影も一緒に変える ---- */
+.review-card { padding: 0.75rem; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.review-card:hover { transform: translateY(-10px); box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22); }
+
+/* ---- #082 ホバーで画像ズーム：枠は動かず、中身が0.5秒で1→1.15倍 ---- */
+.mr-thumb-frame { display: block; overflow: hidden; border-radius: 8px; margin-bottom: 0.9rem; }
+.mr-thumb-frame .review-thumb { margin-bottom: 0; transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.review-card:hover .mr-thumb-frame .review-thumb { transform: scale(1.15); }
+
+@media (prefers-reduced-motion: reduce) {
+  .mr-top .mr-h1, .mr-bottom .mr-tagline, .mr-line { animation: none; transform: none; }
+  .review-list > li { opacity: 1; transform: none; transition: none; }
+  .review-card, .mr-thumb-frame .review-thumb { transition: none; }
+}
