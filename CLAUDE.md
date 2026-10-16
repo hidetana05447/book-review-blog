@@ -15,6 +15,7 @@
   - `〇〇-og.png`：OGP/Twitterカード用（1200×630のPNG。SVGのままだとXでのカード表示が不安定なため、`qlmanage -t -s 1200`でラスタライズ→`sips -c 630 1200`で1200×630にセンタークロップして生成）
   - 書影は著作権上の理由で使わず、オリジナルのテキストベース画像を作る
 - `style.css`：全ページ共通のデザイン
+- `motion.css`・`motion.js`：TOPページ専用の演出（サイト名のせり上がり・カードのフェードイン・ホバーで浮き上がる／画像ズーム）。[motion-prompt](https://showheyohtaki.github.io/motion-prompt/)（MIT）の見本を参考に実装（2026-10-16、試験ブランチ`experiment/motion-prompt-trial`）
 - `sitemap.xml`：検索エンジン向けのページ一覧。**新しい記事を追加するたびに、このファイルにもURLを追記すること**
 - `robots.txt`：`sitemap.xml`の場所をクローラーに知らせる設定（通常、追加の変更は不要）
 
